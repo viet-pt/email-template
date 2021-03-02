@@ -82,45 +82,28 @@
 									<div class="col_cont" style="width:100% !important;">
 										<div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
 											<h4>Tin đăng bán đã được xét duyệt thành công!</h4>
-											<table border="0" cellpadding="0" cellspacing="0" class="divider" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse;  min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" valign="top" width="100%">
-												<tbody>
-													<tr style="vertical-align: top;" valign="top">
-														<td class="divider_inner" style="word-break: break-word; vertical-align: top; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;" valign="top">
-															<table align="center" border="0" cellpadding="0" cellspacing="0" class="divider_content" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse;  border-top: 1px solid #555; width: 100%;" valign="top" width="100%">
-																<tbody>
-																	<tr style="vertical-align: top;" valign="top">
-																		<td style="word-break: break-word; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" valign="top"><span></span></td>
-																	</tr>
-																</tbody>
-															</table>
-														</td>
-													</tr>
-												</tbody>
-											</table>
+											<hr style="border-top: 1px solid #555; margin-top: 15px;" />
+											
 											<div style="color:#000000;line-height:1.8;padding-top:20px;padding-right:25px;padding-bottom:10px;padding-left:25px;">
-												<div style="line-height: 1.8; font-size: 12px;  ">
-													<p th:text ="'Thân gửi ' + ${userName} + ','" style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;"></p>
-													<p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
-														Cảm ơn Quý khách đã tin tưởng & đăng ký sử dụng dịch vụ của Ringxe.vn!</p>
-													<br />
-													<p th:text ="'Mã tin đăng bán của quý khách ' + ${transactionCode}  + ' đã được xét duyệt thành công. Bài đăng của quý khách đã được hiển thị trên website Ringxe.vn kể từ lúc ' + ${approvalTime} + ' ngày ' +  ${approvalDate}"
-														style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;"></p>
-													<p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
-														Quý khách vui lòng <a th:href="'http://ringxe.vn/chi-tiet/vihicle.' + ${id}" target="_blank" rel="noopener noreferrer"><b style="color: yellow;">XEM TẠI ĐÂY</b></a>
-													</p>
-													<br />
-													<p th:utext ="'Trong trường hợp muốn sửa bất cứ thông tin gì trong bài đăng đã duyệt, Quý khách hàng vui lòng đăng nhập tài khoản và vào mục Quản Lý Phương Tiện để thực hiện chỉnh sửa & gửi duyệt tự động hoặc liên hệ với Ringxe qua số điện thoại <b>(024) 39 72 72 72</b> (từ 8-20h các ngày trong tuần, trừ CN) và đọc mã đơn của quý khách <b>' + ${transactionCode}  + '</b> cho kỹ thuật viên của chúng tôi để được hỗ trợ sửa tin kịp thời.'"
-														style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;"></p>
-												</div>
+												<p th:text ="'Thân gửi ' + ${userName} + ','" style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;"></p>
+												<p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
+													Cảm ơn Quý khách đã tin tưởng & đăng ký sử dụng dịch vụ của Ringxe.vn!</p>
+												<br />
+												<p th:text ="'Mã tin đăng bán của quý khách ' + ${transactionCode}  + ' đã được xét duyệt thành công. Bài đăng của quý khách đã được hiển thị trên website Ringxe.vn kể từ lúc ' + ${approvalTime}"
+													style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;"></p>
+												<p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
+													Quý khách vui lòng <a th:href="'http://ringxe.vn/chi-tiet/vihicle.' + ${id}" target="_blank" rel="noopener noreferrer"><b style="background-color: yellow;">XEM TẠI ĐÂY</b></a>
+												</p>
+												<br />
+												<p th:utext ="'Trong trường hợp muốn sửa bất cứ thông tin gì trong bài đăng đã duyệt, Quý khách hàng vui lòng đăng nhập tài khoản và vào mục Quản Lý Phương Tiện để thực hiện chỉnh sửa & gửi duyệt tự động hoặc liên hệ với Ringxe qua số điện thoại <b>(024) 39 72 72 72</b> (từ 8-20h các ngày trong tuần, trừ CN) và đọc mã đơn của quý khách <b>' + ${transactionCode}  + '</b> cho kỹ thuật viên của chúng tôi để được hỗ trợ sửa tin kịp thời.'"
+													style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;"></p>
 											</div>
 
 											<div style="color:#000000;line-height:1.8;padding-top:0px;padding-right:25px;padding-bottom:15px;padding-left:25px;">
-												<div style="line-height: 1.8; font-size: 12px;  ">
-													<p style="font-size: 14px; line-height: 1.8;  margin: 0;">
-														Trân trọng,</p>
-													<p style="font-size: 14px; line-height: 1.8;  margin: 0;">
-														Ringxe.vn</p>
-												</div>
+												<p style="font-size: 14px; line-height: 1.8;  margin: 0;">
+													Trân trọng,</p>
+												<p style="font-size: 14px; line-height: 1.8;  margin: 0;">
+													Ringxe.vn</p>
 											</div>
 										</div>
 										<!--<![endif]-->

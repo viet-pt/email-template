@@ -89,64 +89,34 @@
 								<div class="col num12"
 									style="min-width: 320px; max-width: 640px; display: table-cell; vertical-align: top; width: 640px;">
 									<div class="col_cont" style="width: 100% !important;">
-										<div
-											style="border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent; padding-top: 5px; padding-bottom: 5px; padding-right: 0px; padding-left: 0px;">
+										<div style="border-top: 0px solid transparent; border-left: 0px solid transparent;
+											border-bottom: 0px solid transparent; border-right: 0px solid transparent; padding-top: 5px;
+											padding-bottom: 5px; padding-right: 0px; padding-left: 0px;">
 											<h4>Đăng ký dịch vụ thành công!</h4>
-											<table border="0" cellpadding="0" cellspacing="0"
-												class="divider" role="presentation"
-												style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse;  min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
-												valign="top" width="100%">
-												<tbody>
-													<tr style="vertical-align: top;" valign="top">
-														<td class="divider_inner"
-															style="word-break: break-word; vertical-align: top; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;"
-															valign="top">
-															<table align="center" border="0" cellpadding="0"
-																cellspacing="0" class="divider_content"
-																role="presentation"
-																style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse;  border-top: 1px solid #555; width: 100%;"
-																valign="top" width="100%">
-																<tbody>
-																	<tr style="vertical-align: top;" valign="top">
-																		<td
-																			style="word-break: break-word; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
-																			valign="top"><span></span></td>
-																	</tr>
-																</tbody>
-															</table>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-											<div
-												style="color: #000000;  line-height: 1.8; padding-top: 20px; padding-right: 25px; padding-bottom: 10px; padding-left: 25px;">
-												<div
-													style="line-height: 1.8; font-size: 12px;  ">
-													<p th:text="'Thân gửi ' + ${userName} + ','"
-														style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
-													</p>
-													<p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
-														Cảm ơn Quý khách đã tin tưởng & sử dụng dịch vụ của Ringxe.vn!</p>
-													<p
-														th:text="'Hệ thống đã nhận được thông tin đặt dịch vụ ' + ${service} + ' của Quý khách.'"
-														style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
-													</p>
-													<br />
-													<p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
-														Trong vòng 10 phút tiếp theo, Nhân viên kỹ thuật của chúng tôi sẽ liên hệ để xác nhận và hướng dẫn Quý khách các bước triển khai dịch vụ đã đăng ký.</p>
-													<br />
-													<p th:utext ="'Trong trường hợp việc xét duyệt tin bị chậm trễ vì lý do nào đó, Quý khách hàng xin vui lòng liên hệ với Ringxe qua email: sales@ringxe.vn hoặc số điện thoại <b>(024) 39 72 72 72</b> (từ 8-20h các ngày trong tuần, trừ CN) và đọc mã đơn của quý khách <b>' + ${transactionCode}  + '</b> cho hỗ trợ viên của chúng tôi để được xử lý kịp thời.'"
+											<hr style="border-top: 1px solid #555; margin-top: 15px;" />
+											
+											<div style="color: #000000;  line-height: 1.8; padding-top: 20px; padding-right: 25px; padding-bottom: 10px; padding-left: 25px;">
+												<p th:text="'Thân gửi ' + ${userName} + ','"
+													style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
+												</p>
+												<p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
+													Cảm ơn Quý khách đã tin tưởng & sử dụng dịch vụ của Ringxe.vn!</p>
+												<p th:text="'Hệ thống đã nhận được thông tin đặt dịch vụ ' + ${service} + ' của Quý khách.'"
+													style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
+												</p>
+												<br />
+												<p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
+													Trong vòng 10 phút tiếp theo, Nhân viên kỹ thuật của chúng tôi sẽ liên hệ để xác nhận và hướng dẫn Quý khách các bước triển khai dịch vụ đã đăng ký.</p>
+												<br />
+												<p th:utext ="'Trong trường hợp việc xét duyệt tin bị chậm trễ vì lý do nào đó, Quý khách hàng xin vui lòng liên hệ với Ringxe qua email: sales@ringxe.vn hoặc số điện thoại <b>(024) 39 72 72 72</b> (từ 8-20h các ngày trong tuần, trừ CN) và đọc mã đơn của quý khách <b>' + ${transactionCode}  + '</b> cho hỗ trợ viên của chúng tôi để được xử lý kịp thời.'"
 														style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;"></p>
-												</div>
 											</div>
 											
 											<div style="color: #000000;  line-height: 1.8; padding-top: 0px; padding-right: 25px; padding-bottom: 15px; padding-left: 25px;">
-												<div style="line-height: 1.8; font-size: 12px;">
-													<p style="font-size: 14px; line-height: 1.8;  margin: 0;">
-														Trân trọng,</p>
-													<p style="font-size: 14px; line-height: 1.8;  margin: 0;">
-														Ringxe.vn</p>
-												</div>
+												<p style="font-size: 14px; line-height: 1.8;  margin: 0;">
+													Trân trọng,</p>
+												<p style="font-size: 14px; line-height: 1.8;  margin: 0;">
+													Ringxe.vn</p>
 											</div>
 										</div>
 									</div>
