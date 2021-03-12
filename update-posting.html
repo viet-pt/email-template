@@ -92,7 +92,10 @@
 												<br />
 												<p th:text ="'Bài đăng bán ' + ${vihicleType} + ' ' + ${vihicleName} + ' (mã tin ' + ${transactionCode}  + ') lúc ' + ${createTime} + ' hiện đang còn thiếu, vì vậy để tin đăng này được Duyệt hiển thị trên hệ thống. Quý khách vui lòng bổ sung thêm thông tin như sau:"
 													style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;"></p>
-                        <br />  
+                        <br />
+												<p th:utext ="${infoUpdate}"
+													style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;"></p>
+                        <br />
 												<p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">Quý khách có thể cập nhật thêm các thông tin còn thiếu trên bằng cách đăng nhập tài khoản của mình để tự Sửa tin đăng hoặc gửi file đính kèm nội dung cần bổ sung qua Email sale@ringxe.vn để được admin hỗ trợ.</p>
 											</div>
 
