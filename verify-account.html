@@ -64,6 +64,11 @@
       border: none;
       margin: 15px auto;
       display: block;
+      
+    }
+    .btn-active:hover {
+      transform: scale(1.1);
+	    transition: .3s ease-in-out;
     }
 
     .footer-top {
@@ -103,11 +108,10 @@
                       <h4>Kích hoạt tài khoản Ringxe!</h4>
                       <hr style="border-top: 1px solid #555; margin-top: 15px;" />
                       <div style="color:#000000;line-height:1.8;padding-top:20px;padding-right:25px;padding-bottom:10px;padding-left:25px;">
-                        <p th:text="'Thân gửi ' + ${userName} + ','" style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;"></p>
                         <p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
                           Ringxe xin kính chào quý khách <span style="text-transform: uppercase;" th:text="${userName}" /></p>
                         <p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
-                          Cảm ơn Quý khách đã đăng ký tài khoản trên Sàn ô tô xe máy Ringxe.vn với những thông tin sau:</p>
+                          Cảm ơn Quý khách đã đăng ký tài khoản Ringxe.vn với những thông tin sau:</p>
                         <p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
                           - Số điện thoại đăng ký dịch vụ: <span style="font-weight: bold;" th:text="${phoneNumber}" /></p>
                         <p style="font-size: 14px; line-height: 1.8; word-break: break-word; text-align: left;  margin: 0;">
